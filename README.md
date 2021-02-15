@@ -32,7 +32,7 @@ Mail : admin@admin.com
 =============TANIMLI SEFER BİLGİLERİ SEÇİLMELİDİR========
 
 
-KALKIŞ                VARIŞ              TARİH    SAAT
+|KALKIŞ|                |VARIŞ|        |TARİH|   |SAAT|
 --------------------------------------------------------
 ELAZIĞ              	İSTANBUL      	2021-02-13	14:00
 
