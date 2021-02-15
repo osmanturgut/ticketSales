@@ -1,4 +1,15 @@
 
+ticketSales
+===============PROJE BİLGİLERİ=========================
+
+Proje Asp .Net Core 2.0 sürümü ile MVC mimarisi kullanılarak geliştirilmiştir. Entity FR. DB First ile tasarlanmıştır.
+
+===================ADMİN BİLGİLERİ======================
+
+Mail : admin@admin.com Şifre: admin
+
+=============TANIMLI SEFER BİLGİLERİ SEÇİLMELİDİR======== 
+
 
 | KALKIŞ |                | VARIŞ   |          | TARİH     |     | SAAT |
 -------------------------------------------------------------------
