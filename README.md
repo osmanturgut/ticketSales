@@ -34,10 +34,10 @@ Mail : admin@admin.com
 
 |KALKIŞ|                |VARIŞ|        |TARİH|   |SAAT|
 --------------------------------------------------------
-ELAZIĞ              	İSTANBUL      	2021-02-13	14:00
+|ELAZIĞ|              	|İSTANBUL|      	|2021-02-13|	|14:00|
 
 
-ANKARA              	İSTANBUL        2021-02-15	12:00
+|ANKARA|             	|İSTANBUL|        |2021-02-15|	|12:00|
 
 
 ANKARA              	İSTANBUL        2021-02-16	12:00
