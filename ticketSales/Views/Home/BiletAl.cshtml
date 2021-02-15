@@ -1,0 +1,36 @@
+﻿@model ticketSales.ViewModel.SeferDetayViewModel
+
+<h2>BiletAl</h2>
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="BiletAl">
+    <div class="col-md-2" border="15 " cellpadding="0" cellspacing="0" style="float:left">
+        <label>KALKIŞ</label>
+        <input type="text" name="kalkis_ili" value="@Model.Kalkıs">
+    </div>
+    <div class="col-md-2" border="2" cellpadding="0" cellspacing="0" style="float:left">
+
+        <label>VARIŞ</label>
+        <input type="text" name="varis_ili" value="@Model.Varıs">
+
+    </div>
+    <div class="col-md-2" border="2" cellpadding="0" cellspacing="0">
+
+        <label>GİDİŞ TARİHİ</label>
+        <input type="text" name="gidis_tarihi" value="@Model.Sefer.Date">
+    </div>
+    <div class="col-md-2" border="2" cellpadding="0" cellspacing="0">
+
+        <label>GİDİŞ SAATİ</label>
+        <input type="text" name="gidis_saati" value="@Model.Sefer.Time">
+        <input type="hidden" name="sefer_id" value=@Model.Sefer.Id>
+    </div>
+    <div  class="col-md-2" border="2" cellpadding="0" cellspacing="0"  style="float:left">
+
+        <label>FİYAT</label>
+        <input type="text" name="fiyat" value="@Model.Sefer.Price">
+        <input type="hidden" name="user_id" value=@Model.User.Id>
+
+        <input border="2 " type="submit" value="BiletAl">
+    </div>
+   
+
+</form>

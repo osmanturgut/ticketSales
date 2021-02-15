@@ -1,0 +1,26 @@
+﻿
+@if (ViewBag.Message != null)
+{
+    <span>@ViewBag.Message</span>
+}
+
+
+   
+
+
+<div align="center" style="margin-top:100px;margin-bottom:200px">
+    <a asp-action="Create">Kayıt Ol</a>
+    <form method="get" enctype="multipart/form-data" asp-controller="User" asp-action="Login">
+        <label>Email:</label>
+        <input type="text" name="email"><br><br>
+        <label>Şifre:</label>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Giriş">
+
+    </form>
+</div>
+
+
+
+
+

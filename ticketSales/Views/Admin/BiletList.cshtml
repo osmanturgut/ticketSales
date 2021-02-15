@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ticketSales.ViewModel.BiletDetayViewModel>
+
+<p>
+    <a asp-action="Cikis">Çıkış</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Adı
+            </th>
+            <th>
+                Kalkış
+            </th>
+            <th>
+                Varış
+            </th>
+            <th>
+                Tarih
+            </th>
+            <th>
+                Saat
+            </th>
+            <th>
+                Fiyat
+            </th>
+            
+            <th>
+                Durum
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arrival)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TicketPrice)
+            </td>
+          
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @if (item.Status == true)
+                {
+                    @Html.ActionLink("Iptal", "Iptal", new { id = item.Id })
+                }
+
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
